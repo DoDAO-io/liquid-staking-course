@@ -1,5 +1,5 @@
-title: DoDAO Course Template
-key: dodao-course-template
+title: Liquid Staking Course
+key: liquid-staking-course
 summary: |
   This is a course template
 highlights:
@@ -14,15 +14,19 @@ topics:
   - key: introduction
     title: Introduction
     details: >+
-      Smart contract auditing is the process of reviewing and testing the source
-      code of a smart contract to identify any potential vulnerabilities or
-      security issues. This can include checking for errors in the code,
-      evaluating the contract's overall design and architecture, and testing the
-      contract's functionality to ensure that it performs as intended. The goal
-      of a smart contract audit is to ensure that the contract is secure and
-      reliable, and that it will function as intended when deployed on a
-      blockchain network.
-
+      DeSci is a movement creating public infrastructure for scientific knowledge through the Web3 stack. 
+      It aims to incentivize scientists to share and receive credit for their work, while promoting transparency and accessibility to all.
+      This decentralized approach allows for diverse funding sources, accessible data and methods, and incentives for reproducibility.
+      It creates a more resistant research model to central authorities and promotes unconventional ideas.
+  - key: liquid-staking
+    title: Liquid Staking
+    details: >
+      Liquid staking is a staking service that allows users to pledge their funds to secure a network while still maintaining access to their funds. 
+      This is different from traditional Proof-of-Stake (PoS) systems, which require users to lock up their assets for a set period of time.
+      Users can generate multiple revenue streams from their crypto assets by locking them up and still accessing them. 
+      They can use the liquid versions of their assets on other DeFi protocols and earn more on their initial deposits.
+    explanations: liquid-staking.yaml
+    questions: liquid-staking.yaml
 courseAdmins:
   - '0x34d014758297c00fea49935fce172677904d51ef'
   - '0x2a6af0619be90d129ab0d70c10e25c097b6ec67d'
