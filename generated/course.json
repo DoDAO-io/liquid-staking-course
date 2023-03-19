@@ -1,6 +1,6 @@
 {
-  "key": "dodao-course-template",
-  "title": "DoDAO Course Template",
+  "key": "liquid-staking-course",
+  "title": "Liquid Staking Course",
   "summary": "This is a course template\n",
   "details": "## Coming Soon",
   "duration": "30 mins - 1 hour",
@@ -22,10 +22,332 @@
     {
       "title": "Introduction",
       "key": "introduction",
-      "details": "Smart contract auditing is the process of reviewing and testing the source code of a smart contract to identify any potential vulnerabilities or security issues. This can include checking for errors in the code, evaluating the contract's overall design and architecture, and testing the contract's functionality to ensure that it performs as intended. The goal of a smart contract audit is to ensure that the contract is secure and reliable, and that it will function as intended when deployed on a blockchain network.\n\n",
+      "details": "Liquid staking is a staking service that allows users to pledge their funds to secure a network while still maintaining access to their funds. This is different from traditional Proof-of-Stake (PoS) systems, which require users to lock up their assets for a set period of time. Users can generate multiple revenue streams from their crypto assets by locking them up and still accessing them. They can use the liquid versions of their assets on other DeFi protocols and earn more on their initial deposits.\n",
       "order": 0,
-      "explanations": [],
-      "questions": [],
+      "explanations": [
+        {
+          "key": "intro-to-liquid-staking",
+          "title": "Introduction",
+          "shortTitle": "Introduction",
+          "details": "The majority of modern blockchains are secured by the Proof of Stake consensus mechanism, which disincentivizes attacks on the network by selecting validators to create new blocks based on the amount of cryptocurrency they hold and have locked up as collateral. In other words, the more cryptocurrency a validator holds and locks up, the higher the chances they have to be selected to create a new block and earn rewards. In Proof of Stake, new blockchain transactions are verified by putting tokens \"at stake\", which can be taken away (\"slashed\") in the event of fraudulent behavior. This differs from the traditional Proof of Work consensus mechanism, which disincentivizes attacks by requiring a majority of the computing power. However, both Proof of Stake and Proof of Work rely on an economic disincentive.\nWith Proof of Stake, a token holder can lock up their tokens and use their weight to verify the authenticity of transactions, receiving a return similar to that of a bond. While tokens are staked, they become illiquid and cannot be transacted, traded, or used as collateral.\nThis illiquidity problem can be solved through liquid staking. Liquid staking providers take token deposits, stake those tokens, and issue receipts that are redeemable for the staked tokens. These receipts can be traded or used as collateral elsewhere, making them similar to liquid staking derivatives. Earnings through staking can be a passive income source for cryptocurrency holders, as it involves locking up their tokens in a staking pool or becoming a validator to help secure the network and earn rewards. Validators play an important role in liquid staking. Let’s see how.\n#### Validator\nValidators in liquid staking are entities that run nodes to secure the network and earn rewards by locking up their ETH. However, unlike solo staking, validators in liquid staking do not have full control over their validator keys or funds. Instead, they delegate their stake to a liquid staking protocol that issues them a tokenized representation of their stake, such as stETH from Lido DAO. This token can be used in other DeFi protocols or traded on the market, providing liquidity and capital efficiency for the validators. Validators in liquid staking also benefit from risk diversification, reward smoothing and insurance mechanisms offered by the protocol. However, they also have to trust the protocol's governance and security, as well as pay fees to the protocol operators.\n"
+        },
+        {
+          "key": "staking",
+          "title": "Staking",
+          "shortTitle": "Staking",
+          "details": "#### Staking\nStaking is a concept borrowed from traditional yield-bearing savings accounts, but with a few differences. Instead of fiat money, digital assets, or crypto assets, are used to stake. Also, staking rewards are higher due to the transparent and decentralized nature of blockchain systems, which eliminates the need for intermediaries.\nIn its simplest form, staking requires users to lock up their digital currencies for a specific period to secure a network, and they receive newly minted coins of the underlying network as a reward. The staking industry has become independent, with over $18 billion recorded in the ecosystem.\n#### Ethereum Staking Options\nThere are different forms of staking, including self-staking, exchange staking, and locked staking. \n- **Self Staking** Self staking is a process where an individual becomes a validator on the Ethereum proof of stake (PoS) blockchain to verify transactions by staking a significant amount of ETH. Unlike competing validators, those who self stake take turns verifying transactions, leading to a reduced carbon footprint. However, becoming a validator on the Ethereum network is a capital-intensive exercise, with a high threshold of 32 ETH, which trades at a high price of $1,000+. Moreover, if a network issue occurs, or the validator makes a mistake while working, the network will slash the validator's staked ETH by half, leading to a substantial impact. Another issue is that validators cannot access their staked ETH until the lock time frame is completed. This can significantly impact them in the short term, as they cannot move their assets to another platform if the need arises.\n- **Centralized Exchange Staking** Exchange staking is a less capital-intensive option, where a centralized crypto exchange creates a pool for customers to deposit their assets for staking. Users can stake any amount of the crypto asset they have, and exchanges pay pool contributors daily or monthly. However, the centralized nature of this system comes with risks, such as lack of transparency and trust in a centralized party, and withdrawal fees.\n- **Locked Staking** Locked staking involves committing to a specific time period to stake tokens or cryptocurrency without withdrawing them. For example, Alice participates in a 90-day locked staking program offered by a crypto exchange, where her 1,000 units of cryptocurrency are frozen. In return, she earns rewards and can only access her original stake and earned rewards at the end of the 90-day period. Withdrawing funds before the lockup period results in a penalty or loss of rewards.This option usually ranges between one and three months on most exchanges, and validators who staked directly on the Ethereum protocol have a longer withdrawal window than most.\n"
+        },
+        {
+          "key": "liquid-staking",
+          "title": "Liquid Staking",
+          "shortTitle": "Liquid Staking",
+          "details": "#### What is Liquid Staking?\nLiquid staking is a staking service that allows users to pledge their funds to secure a network while still maintaining access to their funds. This is different from traditional Proof-of-Stake (PoS) systems, which require users to lock up their assets for a set period of time.\nUsers can generate multiple revenue streams from their crypto assets by locking them up and still accessing them. They can use the liquid versions of their assets on other DeFi protocols and earn more on their initial deposits.\n#### How Does Liquid Staking Work?\nLiquid staking works by issuing synthetic tokens that represent the staked funds in a 1:1 ratio. These tokens are called liquid tokens or stTokens (such as stETH for Ethereum). Users can stake their funds with a liquid staking protocol and receive an equivalent amount of liquid tokens in return. These tokens are then stored in an escrow smart contract that distributes rewards to the token holders.\nThe liquid tokens can be used as any other ERC-20 token on the Ethereum network. They can be traded, transferred, lent, borrowed or used as collateral for other DeFi services. This way, users can enjoy both the benefits of staking and liquidity at the same time.\nTo execute liquid staking, a new generation of protocols has been developed, known as liquid staking protocols. These protocols enable users to stake any amount of an asset and unstake them without affecting the initial deposit.\nUsers can earn staking rewards on their initial deposits and generate more funds from their derivative tokens simultaneously, making it a win-win situation. If a staker wants to withdraw their initial deposit, they must return an equivalent deposit valuation to access their funds. Some liquid staking protocols charge a fee for using their platform, but the fees vary.\nFor example, Alice wants to stake 10 ETH with Lido, one of the leading liquid staking protocols on Ethereum. She deposits her 10 ETH into Lido's smart contract and receives 10 stETH in return. She can then use her 10 stETH for various purposes, such as lending them on Aave to earn interest or providing liquidity on Uniswap to earn fees. Meanwhile, she also receives regular rewards from Lido based on the performance of its validators.\n#### What are the Advantages of Liquid Staking?\nLiquid staking offers several advantages over traditional staking:\n- **Liquidity**: Users can access their funds at any time without waiting for long lockup periods or withdrawal delays. - **Flexibility**: Users can diversify their portfolio and explore different DeFi opportunities with their liquid tokens. - **Efficiency**: Users can optimize their returns by combining multiple income streams from both staking and DeFi services. - **Inclusivity**: Users can stake any amount of funds they wish without meeting any minimum threshold or hardware requirements. - **Security**: Users can delegate their funds to professional validators who have more experience and resources to run nodes securely.\nOf course, liquid staking also has some trade-offs and risks that users should be aware of:\n- **Fees**: Users have to pay fees to the liquid staking protocol and its validators for their service. - **Slashing**: Users may lose some of their funds if the validators misbehave or fail to perform their duties. - **Regulation**: Users may face legal uncertainties or restrictions depending on their jurisdiction and compliance status. - **Smart contract risk**: Users may lose their funds if there are bugs or exploits in the smart contract code or underlying infrastructure.\nTherefore, users should do their own research and due diligence before choosing a liquid staking protocol and validator.\n"
+        },
+        {
+          "key": "ethereum-liquid-staking",
+          "title": "Ethereum Liquid Staking",
+          "shortTitle": "ETH Liquid Staking",
+          "details": "#### Ethereum Liquid Staking\nLiquid staking has gained [significant traction](https://beaconcha.in/charts/staked_ether) on Ethereum, which currently has the most value in both staking and liquid staking. Lido Finance is the leading provider of Ethereum's liquid staking services.\nThe popularity of liquid staking on Ethereum is due to unique constraints in its staking functionality. For instance, ETH can only be staked in increments of 32ETH, and unstaking is not yet possible until the [Shanghai upgrade](https://coingape.com/ethereum-shanghai-upgrade-developers-update-eip-4895-for-eth-withdrawals/), which may not be implemented before Q3 or Q4 of 2023. Additionally, ETH stakers cannot delegate their assets to a validator and must either run their validator or entrust custody to a validator to stake their assets. These limitations create high barriers to entry for Ethereum staking, which are overcome by liquid staking pools.\nAlthough Ethereum stakers benefit the most from liquid staking, users of other blockchains can also take advantage of the benefits discussed earlier. While Ethereum is the primary focus, liquid staking pools are gradually becoming more widespread on other chains too.\n\n#### Comprehending the stETH to ETH \"peg\"\nLiquid staking tokens' value is not \"pegged\" to the value of ETH, and they are traded freely in the market. Therefore, during bearish market regimes or when there is a rush for liquidity, the price of Ethereum liquid staking tokens may trade at a discount to Ethereum.\nFor example, in June 2022, due to overleveraged market participants hastily selling their stETH, the price of stETH decreased to a 5-7% discount below the price of ETH, as depicted in the chart.\nThis \"depegging\" from the price of ETH exposed the vulnerability of token holders, and the discount remained for several months before recovering in mid-September 2022.\n\n#### Centralized vs Decentralized Liquid Staking\nStaking has become an increasingly popular way for cryptocurrency holders to earn passive income on their assets. Both centralized and decentralized staking providers have gained popularity because they simplify the staking process and allow users to participate without requiring large minimums, making it accessible for everyday users.\nDecentralized liquid staking providers, such as Lido, Rocket Pool, and Stakewise, have formed Decentralized Autonomous Organizations (DAOs) to handle governance and reward stakeholders of the protocols. The native tokens of these platforms are used to compensate node operators, provide oracle pricing data, vote on matters such as staking fee parameters, and fund protocol development. For example, Lido applies a 10% fee on staking rewards, which is split between node operators and the DAO treasury.\nRecently, Coinbase announced its intention to join Rocket Pool's Oracle DAO, which means that it will provide real-time ETH pricing data, run Rocket Pool nodes, and vote on protocol upgrades. In exchange for these services, Coinbase will receive RPL tokens as compensation.\nAlthough centralized exchanges like Coinbase, Binance, and Kraken already offer staking services to their retail users, the institutional market has been largely untapped. Liquid Collective aims to change that by forming a consortium of top centralized staking providers, including Coinbase, Figment, Kraken, and others, to provide an enterprise-grade multi-chain liquid staking protocol that targets institutional investors.\nHowever, there are concerns about the centralization risk associated with Lido, which represents a significant percentage of the total validator set. Validators have the ability to order or exclude transactions from a block, raising the possibility of censorship at the protocol level. This concern may increase if Coinbase gains more market share, as centralized platforms will face greater pressure to adhere to OFAC sanctions and local compliance regulations.\nLiquid staking on centralized exchanges has many disadvantages as well. One of them is that users have to trust the exchange with their coins and accept their terms and conditions, which may not be favorable or clear. Another disadvantage is that centralized exchanges are more exposed to hacking, fraud, operational failures and regulatory issues that may affect their liquidity and solvency. A recent example of this is the [case of Kraken](https://www.coindesk.com/policy/2023/02/09/us-securities-and-exchange-commission-sues-kraken-over-crypto-staking-services/), a San Francisco-based cryptocurrency exchange that was fined $30 million by the SEC for violating securities laws by offering an unregistered crypto asset staking-as-a-service program. As a result of this settlement, Kraken had to halt its U.S. token-staking business and refund its customers .\nTherefore, decentralized liquid staking offers more benefits and fewer risks than liquid staking on centralized exchanges. It enables users to participate in the growing staking economy while maintaining liquidity, security and flexibility.\n"
+        },
+        {
+          "key": "conclusion",
+          "title": "Conclusion",
+          "shortTitle": "Conclusion",
+          "details": "Liquid staking is an innovative solution that enhances the user experience and utility of PoS protocols. By issuing synthetic tokens that represent the staked funds, liquid staking protocols allow users to enjoy both liquidity and rewards at once. Liquid staking also opens up new possibilities for DeFi integration and composability. Liquid staking is primed to grow in parallel with the greater DeFi movement. Liquid staking is DeFi in its purest form.\n#### References\n- https://www.finoa.io/blog/guide-liquid-staking/ - https://www.okx.com/learn/what-is-liquid-staking - https://coinmarketcap.com/alexandria/article/liquid-staking-and-its-benefits-a-deep-dive-by-lido \n"
+        }
+      ],
+      "questions": [
+        {
+          "uuid": "16c069e0-b573-4642-9549-925d8bd88df7",
+          "type": "SingleChoice",
+          "content": "What is the difference between traditional Proof-of-Stake (P systems and liquid staking?",
+          "hint": "NoHint",
+          "explanation": "Liquid staking is a staking service that allows users to pledge their funds to secure a network while still maintaining access to their funds. This is different from traditional Proof-of-Stake (PoS) systems, which require users to lock up their assets for a set period of time.",
+          "answerKeys": [
+            "B"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "Liquid staking requires users to lock up their assets for a set period of time, while PoS systems do not.",
+              "key": "A"
+            },
+            {
+              "content": "Liquid staking allows users to pledge their funds to secure a network while still maintaining access to their funds, while PoS systems require users to lock up their assets for a set period of time.",
+              "key": "B"
+            },
+            {
+              "content": "Liquid staking requires users to pledge their funds to secure a network, while PoS systems allow users to access their funds and earn staking rewards at the same time.",
+              "key": "C"
+            },
+            {
+              "content": "Liquid staking does not require users to pledge their funds to secure a network, while PoS systems do.",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "2261c2fd-1e65-4b57-afe1-74303e9ae4af",
+          "type": "SingleChoice",
+          "content": "What are liquid tokens received in liquid staking?",
+          "hint": "NoHint",
+          "explanation": "Liquid staking works by issuing synthetic tokens that represent the staked funds in a 1:1 ratio. These tokens are called liquid tokens or stTokens (such as stETH for Ethereum). Users can stake their funds with a liquid staking protocol and receive an equivalent amount of liquid tokens in return.",
+          "answerKeys": [
+            "C"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "Tokens that are highly volatile and not suitable for trading",
+              "key": "A"
+            },
+            {
+              "content": "Tokens that represent physical assets, such as gold or real estate",
+              "key": "B"
+            },
+            {
+              "content": "Synthetic tokens that represent staked funds in a 1:1 ratio",
+              "key": "C"
+            },
+            {
+              "content": "Tokens used to pay for gas fees on the Ethereum network",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "84765b38-c9d4-4b54-b928-3572a64dce5c",
+          "type": "SingleChoice",
+          "content": "What is the role of validators?",
+          "hint": "NoHint",
+          "explanation": "explanation",
+          "answerKeys": [
+            "C"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "To generate synthetic tokens in a 1:1 ratio to staked funds",
+              "key": "A"
+            },
+            {
+              "content": "To store liquid tokens in an escrow smart contract",
+              "key": "B"
+            },
+            {
+              "content": "To verify transactions and secure the network",
+              "key": "C"
+            },
+            {
+              "content": "To charge fees for using the platform",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "794605c7-8ba3-4ea6-a72f-a36bbc81919a",
+          "type": "SingleChoice",
+          "content": "What is the main difference between Proof of Stake and Proof of Work?",
+          "hint": "NoHint",
+          "explanation": "Proof of Stake consensus mechanism disincentivizes attacks on the network by selecting validators to create new blocks based on the amount of cryptocurrency they hold and have locked up as collateral. In other words, the more cryptocurrency a validator holds and locks up, the higher the chances they have to be selected to create a new block and earn rewards. In Proof of Stake, new blockchain transactions are verified by putting tokens \"at stake\", which can be taken away (\"slashed\") in the event of fraudulent behavior. This differs from the traditional Proof of Work consensus mechanism, which disincentivizes attacks by requiring a majority of the computing power.",
+          "answerKeys": [
+            "B"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "Proof of Stake requires a majority of computing power, while Proof of Work selects validators based on their stake.",
+              "key": "A"
+            },
+            {
+              "content": "Proof of Stake selects validators based on their stake, while Proof of Work requires a majority of computing power.",
+              "key": "B"
+            },
+            {
+              "content": "Proof of Stake and Proof of Work are the same consensus mechanism.",
+              "key": "C"
+            },
+            {
+              "content": "Proof of Stake and Proof of Work both rely on a majority of validators.",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "ed10c7b1-7b62-4ad9-b0fb-561d0e5dca42",
+          "type": "SingleChoice",
+          "content": "What is the minimum amount of ETH required to become a validator in self-staking?",
+          "hint": "NoHint",
+          "explanation": "Becoming a validator on the Ethereum network is a capital-intensive exercise, with a high threshold of 32 ETH.",
+          "answerKeys": [
+            "C"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "10 ETH",
+              "key": "A"
+            },
+            {
+              "content": "16 ETH",
+              "key": "B"
+            },
+            {
+              "content": "32 ETH",
+              "key": "C"
+            },
+            {
+              "content": "64 ETH",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "044fee34-9763-42b1-976a-f32ba73c818e",
+          "type": "SingleChoice",
+          "content": "What are the risks associated with centralized exchange staking?",
+          "hint": "NoHint",
+          "explanation": "The centralized nature of this system comes with risks, such as lack of transparency and trust in a centralized party, and withdrawal fees.",
+          "answerKeys": [
+            "D"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "Lack of transparency",
+              "key": "A"
+            },
+            {
+              "content": "Withdrawal fees",
+              "key": "B"
+            },
+            {
+              "content": "Dependence on a centralized party",
+              "key": "C"
+            },
+            {
+              "content": "All of the above",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "f0ffb61e-8d87-4c3d-94f7-ee0fd62f7254",
+          "type": "SingleChoice",
+          "content": "What is the primary advantage of staking over traditional yield-bearing savings accounts?",
+          "hint": "NoHint",
+          "explanation": "Staking rewards are higher due to the transparent and decentralized nature of blockchain systems, which eliminates the need for intermediaries.",
+          "answerKeys": [
+            "D"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "Lower rewards",
+              "key": "A"
+            },
+            {
+              "content": "Higher risk",
+              "key": "B"
+            },
+            {
+              "content": "No access to funds",
+              "key": "C"
+            },
+            {
+              "content": "No intermediaries",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "051c0cc8-1662-4a68-a70a-858fe8443927",
+          "type": "SingleChoice",
+          "content": "What is the penalty for withdrawing funds before the lockup period in locked staking?",
+          "hint": "NoHint",
+          "explanation": "Locked staking involves committing to a specific time period to stake tokens or cryptocurrency without withdrawing them. Withdrawing funds before the lockup period results in a penalty or loss of rewards.",
+          "answerKeys": [
+            "A"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "Loss of rewards",
+              "key": "A"
+            },
+            {
+              "content": "Slashing of stake",
+              "key": "B"
+            },
+            {
+              "content": "Double fees",
+              "key": "C"
+            },
+            {
+              "content": "Permanent lockup of assets",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "55880a70-707a-4b18-8f09-78cfa4299906",
+          "type": "SingleChoice",
+          "content": "Which of the following is one of the leading liquid staking protocols on Ethereum?",
+          "hint": "NoHint",
+          "explanation": "Lido Finance is a liquid staking protocol.",
+          "answerKeys": [
+            "C"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "Uniswap",
+              "key": "A"
+            },
+            {
+              "content": "Aave",
+              "key": "B"
+            },
+            {
+              "content": "Lido",
+              "key": "C"
+            },
+            {
+              "content": "Compound",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "6d9dac20-2326-4202-84db-98f14fe33f7c",
+          "type": "SingleChoice",
+          "content": "How can users benefit from liquid staking?",
+          "hint": "NoHint",
+          "explanation": "Users can benefit from liquid staking by staking their funds and receiving liquid tokens in return, earning staking rewards on their initial deposits, and generating more funds from their derivative tokens simultaneously. Additionally, users can use their liquid tokens for various purposes, such as lending them on Aave to earn interest or providing liquidity on Uniswap to earn fees.",
+          "answerKeys": [
+            "D"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "Users can stake their funds and receive a 1:1 ratio of liquid tokens in return.",
+              "key": "A"
+            },
+            {
+              "content": "Users can earn staking rewards on their initial deposits and generate more funds from their derivative tokens simultaneously.",
+              "key": "B"
+            },
+            {
+              "content": "Users can use their liquid tokens for various purposes, such as lending them on Aave to earn interest or providing liquidity on Uniswap to earn fees.",
+              "key": "C"
+            },
+            {
+              "content": "All of the above.",
+              "key": "D"
+            }
+          ]
+        }
+      ],
       "readings": [],
       "summaries": []
     }
