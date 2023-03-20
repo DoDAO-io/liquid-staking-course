@@ -1,20 +1,3 @@
-- uuid: 16c069e0-b573-4642-9549-925d8bd88df7
-  type: SingleChoice
-  content: What is the difference between traditional Proof-of-Stake (P systems and liquid staking?
-  hint: NoHint
-  explanation: Liquid staking is a staking service that allows users to pledge their funds to secure a network while still maintaining access to their funds. This is different from traditional Proof-of-Stake (PoS) systems, which require users to lock up their assets for a set period of time.
-  answerKeys:
-    - B
-  difficultyLevel: Low
-  choices:
-    - content: Liquid staking requires users to lock up their assets for a set period of time, while PoS systems do not.
-      key: A
-    - content: Liquid staking allows users to pledge their funds to secure a network while still maintaining access to their funds, while PoS systems require users to lock up their assets for a set period of time.
-      key: B
-    - content: Liquid staking requires users to pledge their funds to secure a network, while PoS systems allow users to access their funds and earn staking rewards at the same time.
-      key: C
-    - content: Liquid staking does not require users to pledge their funds to secure a network, while PoS systems do.
-      key: D
 - uuid: 2261c2fd-1e65-4b57-afe1-74303e9ae4af
   type: SingleChoice
   content: What are liquid tokens received in liquid staking?
@@ -36,7 +19,7 @@
   type: SingleChoice
   content: What is the role of validators?
   hint: NoHint
-  explanation: explanation
+  explanation: Validators in liquid staking are entities that run nodes to secure the network and earn rewards by locking up their ETH. However, unlike solo staking, validators in liquid staking do not have full control over their validator keys or funds.
   answerKeys:
     - C
   difficultyLevel: Low
@@ -64,7 +47,7 @@
       key: B
     - content: Proof of Stake and Proof of Work are the same consensus mechanism.
       key: C
-    - content: Proof of Stake and Proof of Work both rely on a majority of validators.
+    - content: Proof of Stake and Proof of Work both do not rely on validators.
       key: D
 - uuid: ed10c7b1-7b62-4ad9-b0fb-561d0e5dca42
   type: SingleChoice
@@ -99,40 +82,6 @@
     - content: Dependence on a centralized party
       key: C
     - content: All of the above
-      key: D
-- uuid: f0ffb61e-8d87-4c3d-94f7-ee0fd62f7254
-  type: SingleChoice
-  content: What is the primary advantage of staking over traditional yield-bearing savings accounts?
-  hint: NoHint
-  explanation: Staking rewards are higher due to the transparent and decentralized nature of blockchain systems, which eliminates the need for intermediaries.
-  answerKeys:
-    - D
-  difficultyLevel: Low
-  choices:
-    - content: Lower rewards
-      key: A
-    - content: Higher risk
-      key: B
-    - content: No access to funds
-      key: C
-    - content: No intermediaries
-      key: D
-- uuid: 051c0cc8-1662-4a68-a70a-858fe8443927
-  type: SingleChoice
-  content: What is the penalty for withdrawing funds before the lockup period in locked staking?
-  hint: NoHint
-  explanation: Locked staking involves committing to a specific time period to stake tokens or cryptocurrency without withdrawing them. Withdrawing funds before the lockup period results in a penalty or loss of rewards.
-  answerKeys:
-    - A
-  difficultyLevel: Low
-  choices:
-    - content: Loss of rewards
-      key: A
-    - content: Slashing of stake
-      key: B
-    - content: Double fees
-      key: C
-    - content: Permanent lockup of assets
       key: D
 - uuid: 55880a70-707a-4b18-8f09-78cfa4299906
   type: SingleChoice
