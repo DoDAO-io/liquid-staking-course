@@ -1,0 +1,119 @@
+- uuid: 2261c2fd-1e65-4b57-afe1-74303e9ae4af
+  type: SingleChoice
+  content: What are liquid tokens received in liquid staking?
+  hint: NoHint
+  explanation: Liquid staking works by issuing synthetic tokens that represent the staked funds in a 1:1 ratio. These tokens are called liquid tokens or stTokens (such as stETH for Ethereum). Users can stake their funds with a liquid staking protocol and receive an equivalent amount of liquid tokens in return.
+  answerKeys:
+    - C
+  difficultyLevel: Low
+  choices:
+    - content: Tokens that are highly volatile and not suitable for trading
+      key: A
+    - content: Tokens that represent physical assets, such as gold or real estate
+      key: B
+    - content: Synthetic tokens that represent staked funds in a 1:1 ratio
+      key: C
+    - content: Tokens used to pay for gas fees on the Ethereum network
+      key: D
+- uuid: 84765b38-c9d4-4b54-b928-3572a64dce5c
+  type: SingleChoice
+  content: What is the role of validators?
+  hint: NoHint
+  explanation: Validators in liquid staking are entities that run nodes to secure the network and earn rewards by locking up their ETH. However, unlike solo staking, validators in liquid staking do not have full control over their validator keys or funds.
+  answerKeys:
+    - C
+  difficultyLevel: Low
+  choices:
+    - content: To generate synthetic tokens in a 1:1 ratio to staked funds
+      key: A
+    - content: To store liquid tokens in an escrow smart contract
+      key: B
+    - content: To verify transactions and secure the network
+      key: C
+    - content: To charge fees for using the platform
+      key: D
+- uuid: 794605c7-8ba3-4ea6-a72f-a36bbc81919a
+  type: SingleChoice
+  content: What is the main difference between Proof of Stake and Proof of Work?
+  hint: NoHint
+  explanation: Proof of Stake consensus mechanism disincentivizes attacks on the network by selecting validators to create new blocks based on the amount of cryptocurrency they hold and have locked up as collateral. In other words, the more cryptocurrency a validator holds and locks up, the higher the chances they have to be selected to create a new block and earn rewards. In Proof of Stake, new blockchain transactions are verified by putting tokens "at stake", which can be taken away ("slashed") in the event of fraudulent behavior. This differs from the traditional Proof of Work consensus mechanism, which disincentivizes attacks by requiring a majority of the computing power.
+  answerKeys:
+    - B
+  difficultyLevel: Low
+  choices:
+    - content: Proof of Stake requires a majority of computing power, while Proof of Work selects validators based on their stake.
+      key: A
+    - content: Proof of Stake selects validators based on their stake, while Proof of Work requires a majority of computing power.
+      key: B
+    - content: Proof of Stake and Proof of Work are the same consensus mechanism.
+      key: C
+    - content: Proof of Stake and Proof of Work both do not rely on validators.
+      key: D
+- uuid: ed10c7b1-7b62-4ad9-b0fb-561d0e5dca42
+  type: SingleChoice
+  content: What is the minimum amount of ETH required to become a validator in self-staking?
+  hint: NoHint
+  explanation: Becoming a validator on the Ethereum network is a capital-intensive exercise, with a high threshold of 32 ETH.
+  answerKeys:
+    - C
+  difficultyLevel: Low
+  choices:
+    - content: 10 ETH
+      key: A
+    - content: 16 ETH
+      key: B
+    - content: 32 ETH
+      key: C
+    - content: 64 ETH
+      key: D
+- uuid: 044fee34-9763-42b1-976a-f32ba73c818e
+  type: SingleChoice
+  content: What are the risks associated with centralized exchange staking?
+  hint: NoHint
+  explanation: The centralized nature of this system comes with risks, such as lack of transparency and trust in a centralized party, and withdrawal fees.
+  answerKeys:
+    - D
+  difficultyLevel: Low
+  choices:
+    - content: Lack of transparency
+      key: A
+    - content: Withdrawal fees
+      key: B
+    - content: Dependence on a centralized party
+      key: C
+    - content: All of the above
+      key: D
+- uuid: 55880a70-707a-4b18-8f09-78cfa4299906
+  type: SingleChoice
+  content: Which of the following is one of the leading liquid staking protocols on Ethereum?
+  hint: NoHint
+  explanation: Lido Finance is a liquid staking protocol.
+  answerKeys:
+    - C
+  difficultyLevel: Low
+  choices:
+    - content: Uniswap
+      key: A
+    - content: Aave
+      key: B
+    - content: Lido
+      key: C
+    - content: Compound
+      key: D
+- uuid: 6d9dac20-2326-4202-84db-98f14fe33f7c
+  type: SingleChoice
+  content: How can users benefit from liquid staking?
+  hint: NoHint
+  explanation: Users can benefit from liquid staking by staking their funds and receiving liquid tokens in return, earning staking rewards on their initial deposits, and generating more funds from their derivative tokens simultaneously. Additionally, users can use their liquid tokens for various purposes, such as lending them on Aave to earn interest or providing liquidity on Uniswap to earn fees.
+  answerKeys:
+    - D
+  difficultyLevel: Low
+  choices:
+    - content: Users can stake their funds and receive a 1:1 ratio of liquid tokens in return.
+      key: A
+    - content: Users can earn staking rewards on their initial deposits and generate more funds from their derivative tokens simultaneously.
+      key: B
+    - content: Users can use their liquid tokens for various purposes, such as lending them on Aave to earn interest or providing liquidity on Uniswap to earn fees.
+      key: C
+    - content: All of the above.
+      key: D
